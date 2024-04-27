@@ -1,8 +1,8 @@
-#!/user/bin/env bash
+#!/user/bin/enve bash
 
 set -o errexit
 
-pip install r -requirements.txt
+pip install -r requirements.txt
 
 python3 manage.py collectstatic --no-input
 python3 manage.py migrate 
